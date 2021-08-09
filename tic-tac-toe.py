@@ -43,10 +43,12 @@ def pieces():
     go_first = ask_yes_no("Хочешь ходить первым? (y/n): ")
     if go_first == "y":
         print("\nЗначит играешь крестиками.")
-        human = X, computer = O
+        human = X
+        computer = O
     else:
         print("\nИграешь ноликами.")
-        computer = X, human = O
+        computer = X
+        human = O
     return computer, human
 
 def new_board():
